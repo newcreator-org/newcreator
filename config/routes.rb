@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'help/index'
   get 'top/index'
   root to: 'public#index'
   get 'public/index'
