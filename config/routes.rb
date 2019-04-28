@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'textbook/index'
+  get 'textbook/show'
   get 'help/index'
   get 'top/index'
   root to: 'public#index'
