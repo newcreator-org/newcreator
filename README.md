@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version 2.5.3
 
-Things you may want to cover:
+* Rails version 5.2.1
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+開発環境で使用する際には seed.rb に初期データはありませんので、ご自身で作成して、開発環境をご準備ください。入門者向けの開発者ドキュメントは現在準備中です。
