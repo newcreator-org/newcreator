@@ -7,7 +7,7 @@
 <!--  Light Bootstrap Table core CSS    -->
 <link href="/ui/assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
 
 
 <!--     Fonts and icons     -->
@@ -112,7 +112,21 @@
         <div class="row">
           <div class="col-md-12">
 
-          <%= @textbook.title %>
+
+          <script>
+              jQuery(document).ready(function() {
+                  jQuery.get('<%= @textbook.uuid %>',
+                      function (data) {
+                  var text = data,
+                      target = document.getElementById('targetDiv'),
+                      converter = new showdown.Converter(),
+                      html = converter.makeHtml(text);
+                  target.innerHTML = html;
+                      });
+              });
+          </script>
+
+          <div id="targetDiv"></div>
 
 
           </div>
